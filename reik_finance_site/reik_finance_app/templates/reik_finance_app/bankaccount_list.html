@@ -1,0 +1,17 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Accounts</title>
+</head>
+<h1>List of Bank Accounts (ListView) </h1>
+<body>
+<ul>
+    {% for account in bankaccounts %}
+        <li>{{ account.first_name }} {{ account.last_name }}</li>
+    {%endfor%}
+</ul>
+</body>
+
+</html>
